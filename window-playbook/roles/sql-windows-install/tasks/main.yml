@@ -1,0 +1,7 @@
+---
+- name: Install mysql
+  win_chocolatey:
+    name: sql-server-2019
+    version: "{{ sql_version }}"
+    state: present
+

@@ -1,0 +1,5 @@
+---
+- name: SQL Server
+  hosts: windows
+  roles:
+    - sql-windows-install
