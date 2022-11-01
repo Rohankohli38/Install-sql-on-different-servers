@@ -1,0 +1,7 @@
+- name: create-sql-rds
+  hosts: localhost
+  connection: local
+  gather_facts : false
+  roles:
+    - sql-rds-install
+

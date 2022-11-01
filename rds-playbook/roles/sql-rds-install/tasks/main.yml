@@ -1,0 +1,16 @@
+---
+- name: provision SQL RDS instance
+  rds:
+    command: create
+    region: "{{ aws_region }}"
+    instance_name: new-database
+    db_engine: "{{ db_engine }}"
+    size: 50
+    instance_type: db.r5.large
+    license_model: license-included
+    username: "{{ username }}"
+    password: "{{ password }}"
+    tags:
+      Environment: testing
+      Application: cms
+
